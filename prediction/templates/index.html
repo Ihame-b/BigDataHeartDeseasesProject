@@ -1,0 +1,141 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>CHUK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{% static '/css/style1.css' %}">
+	<style>
+
+	</style>
+
+	</head>
+	<body id="gb" >
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<!-- <h2 class="heading-section">Contact Form #09</h2> -->
+					<img src="{% static 'img/chuklogo.png' %}" alt="">
+				</div>
+			</div>
+			<div class="row justify-content-center" >
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+						
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+									<h3 class="mb-4 text-center">Heart Disease Prediction Software CHUK</h3>
+								
+									<form action="predict/" method="Post">
+									{% csrf_token %}  
+										<div class="row" style="margin-left: 20%;">
+											<div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="fname" placeholder="First Name of Patient">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="lname" placeholder="Last Name of Patient">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="age" placeholder="Age">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="sex" placeholder="Sex">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="che" placeholder="Chest pain type">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="bp" placeholder="BP">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="Cho" placeholder="Cholesterol">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="fbs" placeholder="FS over 120">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="ekg" placeholder="EKG Results">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="max" placeholder="Max HR">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="exer" placeholder="Exercise angina">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="st" placeholder="ST depression">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="slope" placeholder="Slope of ST">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="num" placeholder="Number of vessels fluro">
+												</div>
+											  </div>
+											  <div class="col-md-12"> 
+												<div class="form-group">
+												  <input type="text" name="tha" placeholder="Thallium">
+												</div>
+											  </div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="submit" style="width: 40%;" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+
